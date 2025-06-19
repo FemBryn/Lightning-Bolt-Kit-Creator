@@ -1,0 +1,16 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Lightning_Bolt_Kit_Creator.App"
+             RequestedThemeVariant="Default">
+  <Application.Resources>
+    <!-- Define your custom colors here -->
+    <SolidColorBrush x:Key="TabBg">#101010</SolidColorBrush>
+    <SolidColorBrush x:Key="Tab">#1F1F1F</SolidColorBrush>
+    <SolidColorBrush x:Key="Page">#090909</SolidColorBrush>
+    <Color x:Key="Text">#b2b2b2</Color>
+  </Application.Resources>
+
+  <Application.Styles>
+    <FluentTheme />
+  </Application.Styles>
+</Application>

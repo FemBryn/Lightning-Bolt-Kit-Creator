@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Lightning_Bolt_Kit_Creator.Debug"
+        Title="Lightning-Bolt Log"
+        Width="600"
+        Height="300"
+        Background="Black"
+        Loaded="On_Load">
+        <Window.Styles>
+                <Style Selector="TextBlock">
+                <Setter Property="Background" Value="Black" />
+                <Setter Property="Foreground" Value="{StaticResource Text}" />
+                </Style>
+        </Window.Styles>
+        <Window.Styles>
+                <Style Selector="SelectableTextBlock">
+                <Setter Property="Background" Value="Black" />
+                <Setter Property="Foreground" Value="{StaticResource Text}" />
+                </Style>
+        </Window.Styles>
+                
+        <ScrollViewer>
+                <SelectableTextBlock Name="DebuggerText" Text="" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Stretch"/>
+        </ScrollViewer>
+</Window>

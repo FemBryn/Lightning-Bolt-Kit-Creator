@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Lightning_Bolt_Kit_Creator</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.3.1" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.3.1" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.1" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.0.0" Condition="'$(Configuration)' == 'Debug'" />
+    <PackageReference Include="BymlLibrary" Version="2.1.18" />
+    <PackageReference Include="SarcLibrary" Version="3.3.0" />
+    <PackageReference Include="ZstdSharp" Version="0.7.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Icon\Weapon\**" />
+    <AvaloniaResource Include="Icon\Sub\**" />
+    <AvaloniaResource Include="Icon\Special\**" />
+  </ItemGroup>
+</Project>
