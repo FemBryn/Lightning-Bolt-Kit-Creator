@@ -1,2 +1,2 @@
 # Lightning Bolt
-Visual Kit creator for SPlatoon 3 based off of a python script of the same name
+Visual Kit creator for Splatoon 3 based off of a python script named Lightning.
