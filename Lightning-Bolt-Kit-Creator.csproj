@@ -6,6 +6,7 @@
     <RootNamespace>Lightning_Bolt_Kit_Creator</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>Lightning-Bolt.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
