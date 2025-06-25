@@ -7,8 +7,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <ApplicationIcon>Lightning-Bolt.ico</ApplicationIcon>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.3.1" />
     <PackageReference Include="Avalonia.Desktop" Version="11.3.1" />
@@ -17,10 +17,15 @@
     <PackageReference Include="BymlLibrary" Version="2.1.18" />
     <PackageReference Include="SarcLibrary" Version="3.3.0" />
     <PackageReference Include="ZstdSharp" Version="0.7.2" />
-  </ItemGroup>
-  <ItemGroup>
     <AvaloniaResource Include="Icon\Weapon\**" />
     <AvaloniaResource Include="Icon\Sub\**" />
     <AvaloniaResource Include="Icon\Special\**" />
+
+    <Reference Include="Syroot.BinaryData"><HintPath>“libs\Syroot.BinaryData2.dll” </HintPath></Reference>
+    <Reference Include="Syroot.Maths"><HintPath>“libs\Syroot.Maths.dll” </HintPath></Reference>
+    <Reference Include="Syroot.NintenTools.NSW.Bfres"><HintPath>“libs\Syroot.NintenTools.Nsw.Bfres.dll” </HintPath></Reference>
+    <Reference Include="Syroot.NintenTools.NSW.Bfsha"><HintPath>“libs\Syroot.NintenTools.Nsw.Bfsha.dll” </HintPath></Reference>
+    <Reference Include="Syroot.NintenTools.NSW.Bntx"><HintPath>“libs\Syroot.NintenTools.Nsw.Bntx.dll” </HintPath></Reference>
+
   </ItemGroup>
 </Project>

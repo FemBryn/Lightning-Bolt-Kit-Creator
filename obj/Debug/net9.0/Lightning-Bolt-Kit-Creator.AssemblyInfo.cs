@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lightning-Bolt-Kit-Creator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06fdca2e50a067bc823c3a7ddfc8f7f2010abc85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e714be61b9cc0a297a4d73765a5a28115b8dbf7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lightning-Bolt-Kit-Creator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lightning-Bolt-Kit-Creator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

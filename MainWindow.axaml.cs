@@ -72,12 +72,12 @@ public partial class MainWindow : Window
         TestResourceLoading();
         if (Debug.IsDebug())
         {
-            WeaponTypeComboBox.SelectedIndex = 7;
-            MainWeaponComboBox.SelectedIndex = 0;
-            WeaponNameTextBox.Text = "Tester";
-            WeaponSuffixTextBox.Text = "Test";
-            SpecialPointsTextBox.Text = "200";
-            WeaponIdTextBox.Text = "69";
+            WeaponTypeComboBox.SelectedIndex = 9;
+            MainWeaponComboBox.SelectedIndex = 1;
+            WeaponNameTextBox.Text = "Punchline Tri-Stringer";
+            WeaponSuffixTextBox.Text = "Silly";
+            SpecialPointsTextBox.Text = "190";
+            WeaponIdTextBox.Text = "7013";
         }
     }
 

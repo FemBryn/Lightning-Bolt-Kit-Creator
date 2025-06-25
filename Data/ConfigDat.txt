@@ -1,2 +1,2 @@
-Romfs Path :D:\Data\NS-Data\Rom-Exef-Dumps\S3-930\romfs\
-Output Path:C:\Users\Kalista's Laptop\Downloads\Out\
+Romfs Path :D:\Data\NS-Data\Rom-Exef-Dumps\S3-a00\romfs\
+Output Path:C:\Users\Kalista's Laptop\Downloads\out\

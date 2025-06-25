@@ -123,6 +123,13 @@ D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\bin\De
 D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\bin\Debug\net9.0\runtimes\win-arm64\native\libSkiaSharp.dll
 D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\bin\Debug\net9.0\runtimes\win-x64\native\libSkiaSharp.dll
 D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\bin\Debug\net9.0\runtimes\win-x86\native\libSkiaSharp.dll
+D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\bin\Debug\net9.0\Syroot.BinaryData.dll
+D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\bin\Debug\net9.0\Syroot.Maths.dll
+D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\bin\Debug\net9.0\Syroot.NintenTools.NSW.Bfres.dll
+D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\bin\Debug\net9.0\Syroot.NintenTools.NSW.Bfsha.dll
+D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\bin\Debug\net9.0\Syroot.NintenTools.NSW.Bntx.dll
+D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\bin\Debug\net9.0\Syroot.Maths.xml
+D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\bin\Debug\net9.0\Syroot.NintenTools.NSW.Bfres.xml
 D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\obj\Debug\net9.0\Lightning-Bolt-Kit-Creator.csproj.AssemblyReference.cache
 D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\obj\Debug\net9.0\Avalonia\Resources.Inputs.cache
 D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\obj\Debug\net9.0\Avalonia\resources

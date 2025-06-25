@@ -3,7 +3,11 @@ using ZstdSharp;
 using SarcLibrary;
 namespace Lightning_Bolt_Kit_Creator;
 
+using Syroot.NintenTools.NSW.Bfres;
+
 using Revrs;
+using Syroot.NintenTools.NSW.Bntx;
+
 public class FileProcessing
 {
     //Paths
@@ -21,8 +25,17 @@ public class FileProcessing
         Directory.CreateDirectory(path);
     }
     public void onClose()
-    { 
-        Directory.Delete(WeaponFolderRoot + "\\__tempTT",true);
+    {
+        try
+        {
+            Directory.Delete(WeaponFolderRoot + "\\__tempTT", true);
+            
+        }
+        catch (Exception ex)
+        {
+            Debug.Write(ex.ToString());
+        }
+        
     }
     public void WriteWeaponInfo()
     {
@@ -43,7 +56,7 @@ public class FileProcessing
             File.WriteAllText(WeaponFolder + "\\info.txt", TextContents);
             CreateNewActor("S");
             CreateNewActor("G");
-            EditVisualFiles();
+
             Debug.Write("All Done");
 
 
@@ -52,14 +65,15 @@ public class FileProcessing
         {
             Debug.Write(ex.ToString());
         }
+        EditVisualFiles();
 
     }
     public void EditVisualFiles()
     {
         try
         {
-            File.Copy(RomfsPath + "UI\\Icon\\Wpn\\Wst_" + OriginalCodename + "_00.bntx.zs", WeaponFolder + "\\Wst_" + OriginalCodename + "_" + WeaponSuffix + ".bntx.zs");
-            File.Copy(RomfsPath + "UI\\Icon\\WpnPath\\Path_Wst_" + OriginalCodename + "_00.bntx.zs", WeaponFolder + "\\Path_Wst_" + OriginalCodename + "_" + WeaponSuffix + ".bntx.zs");
+            File.Copy(RomfsPath + "UI\\Icon\\Wpn\\Wst_" + OriginalCodename + "_00.bntx.zs", WeaponFolder + "\\Wst_" + WeaponName + ".bntx.zs");
+            File.Copy(RomfsPath + "UI\\Icon\\WpnPath\\Path_Wst_" + OriginalCodename + "_00.bntx.zs", WeaponFolder + "\\Path_Wst_" + WeaponName + ".bntx.zs");
             File.Copy(RomfsPath + "Model\\Wmn_" + (OriginalCodename switch
             {
                 "Shooter_Precision" => "Shooter_Short",
@@ -77,13 +91,48 @@ public class FileProcessing
                 "Spinner_Standard" => "Spinner_StandardT",
                 _ => OriginalCodename
             }) + ".bfres.zs", WeaponFolder + "\\Wmn_" + OriginalCodename + "_" + WeaponSuffix + ".bfres.zs");
+            
+
         }
         catch (Exception ex)
         {
             Debug.Write(ex.ToString());
         }
+        //Wpn Icon Name Editing
+        BntxFile wpn = new BntxFile(new MemoryStream(Zstd.Decompress(File.ReadAllBytes(WeaponFolder + "\\Wst_" + WeaponName + ".bntx.zs"), File.ReadAllBytes(WeaponFolder + "\\Wst_" + WeaponName + ".bntx.zs").Length *6)));
+        wpn.Name = "Wst_" + WeaponName;
+        wpn.Textures[0].Name = "Wst_" + WeaponName;
+        MemoryStream writeStream = new MemoryStream();
+        wpn.Save(writeStream);
+        File.WriteAllBytes(WeaponFolder + "\\Wst_" + WeaponName + ".bntx.zs", Zstd.Compress(writeStream.ToArray(), 3));
 
+        //WpnPath Icon Name Editing
+        BntxFile wpnPath = new BntxFile(new MemoryStream(Zstd.Decompress( File.ReadAllBytes(WeaponFolder + "\\Path_Wst_" + WeaponName + ".bntx.zs"), File.ReadAllBytes(WeaponFolder + "\\Path_Wst_" + WeaponName + ".bntx.zs").Length *6)));
+        wpnPath.Name = "Path_Wst_" + WeaponName;
+        wpnPath.Textures[0].Name = "Path_Wst_" + WeaponName;
+        writeStream = new MemoryStream();
+        wpnPath.Save(writeStream);
+        File.WriteAllBytes(WeaponFolder + "\\Path_Wst_" + WeaponName + ".bntx.zs", Zstd.Compress(writeStream.ToArray(), 3));
+        editModelInfo();
     }
+
+    public async void editModelInfo()
+    {
+        await Task.Delay(100);
+        
+        String ModelName = "Wmn_" + OriginalCodename + "_" + WeaponSuffix;
+        ResFile Model = new ResFile(new MemoryStream(Zstd.Decompress(File.ReadAllBytes(WeaponFolder + "\\Wmn_" + OriginalCodename + "_" + WeaponSuffix + ".bfres.zs"), File.ReadAllBytes(WeaponFolder + "\\Wmn_" + OriginalCodename + "_" + WeaponSuffix + ".bfres.zs").Length * 4)));
+        Model.Name = ModelName;
+        Model.Models[0].Name = ModelName;
+        MemoryStream writeStream = new MemoryStream();
+        Model.Save(writeStream);
+        File.WriteAllBytes( WeaponFolder + "\\Wmn_" + OriginalCodename + "_" + WeaponSuffix + ".bfres.zs", Zstd.Compress(writeStream.ToArray(),3));
+        Debug.Write("Model Name: " + ModelName);
+        Debug.Write("Model Info: " + Model.Models[0].Name);
+        
+        Debug.Write("Model Info Edited!");
+    }
+
     public async void CreateNewActor(String prefix)
     {
         isShelter = false;

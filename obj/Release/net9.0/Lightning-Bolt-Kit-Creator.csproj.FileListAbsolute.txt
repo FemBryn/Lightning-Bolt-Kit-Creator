@@ -76,3 +76,4 @@ D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\obj\Re
 D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\obj\Release\net9.0\Lightning-Bolt-Kit-Creator.pdb
 D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\obj\Release\net9.0\Lightning-Bolt-Kit-Creator.genruntimeconfig.cache
 D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\obj\Release\net9.0\ref\Lightning-Bolt-Kit-Creator.dll
+D:\Data\Files\Coding-Projects\Visual_Lightning\Lightning-Bolt-Kit-Creator\obj\Release\net9.0\Lightning-Bolt-Kit-Creator.sourcelink.json

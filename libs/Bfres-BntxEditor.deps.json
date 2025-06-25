@@ -1,0 +1,95 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Bfres-BntxEditor/1.0.0": {
+        "dependencies": {
+          "Syroot.BinaryData": "2.0.1.0",
+          "Syroot.Maths": "1.5.3.0",
+          "Syroot.NintenTools.NSW.Bfres": "1.2.3.0",
+          "Syroot.NintenTools.NSW.Bfsha": "1.2.3.0",
+          "Syroot.NintenTools.NSW.Bntx": "1.2.3.0"
+        },
+        "runtime": {
+          "Bfres-BntxEditor.dll": {}
+        }
+      },
+      "Syroot.BinaryData/2.0.1.0": {
+        "runtime": {
+          "Syroot.BinaryData.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "Syroot.Maths/1.5.3.0": {
+        "runtime": {
+          "Syroot.Maths.dll": {
+            "assemblyVersion": "1.5.3.0",
+            "fileVersion": "1.5.3.0"
+          }
+        }
+      },
+      "Syroot.NintenTools.NSW.Bfres/1.2.3.0": {
+        "runtime": {
+          "Syroot.NintenTools.NSW.Bfres.dll": {
+            "assemblyVersion": "1.2.3.0",
+            "fileVersion": "1.2.3.0"
+          }
+        }
+      },
+      "Syroot.NintenTools.NSW.Bfsha/1.2.3.0": {
+        "runtime": {
+          "Syroot.NintenTools.NSW.Bfsha.dll": {
+            "assemblyVersion": "1.2.3.0",
+            "fileVersion": "1.2.3.0"
+          }
+        }
+      },
+      "Syroot.NintenTools.NSW.Bntx/1.2.3.0": {
+        "runtime": {
+          "Syroot.NintenTools.NSW.Bntx.dll": {
+            "assemblyVersion": "1.2.3.0",
+            "fileVersion": "1.2.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bfres-BntxEditor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syroot.BinaryData/2.0.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syroot.Maths/1.5.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syroot.NintenTools.NSW.Bfres/1.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syroot.NintenTools.NSW.Bfsha/1.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syroot.NintenTools.NSW.Bntx/1.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
